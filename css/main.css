@@ -1,0 +1,262 @@
+@import './base.css';
+.Plog{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+/*start header*/
+.header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+    background-color: #fff;
+}
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+flex-wrap: wrap;
+
+}
+.header .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.header .logo a {
+    color: var(--mainColor);
+}
+
+.header .navbar a {
+    color: #101828;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+
+/*end header*/
+.welcom{
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Poetsen One", sans-serif;
+}
+.welcom img{
+    width: 90%;
+    height: 90%;
+    
+}
+/*start About-me*/
+
+
+.aboutme {
+    text-align: center;    
+ }
+.aboutme .container{
+    width: calc(100% - 360px);
+}
+.aboutme h2{
+    margin-bottom: 30px;
+    
+}
+
+.aboutme .row {
+    gap: 40px;
+   
+}
+.aboutme img {
+    width: 50%;
+    height: 50%;
+}
+.aboutme .myimg{
+    align-items: center;
+    
+}
+.aboutme .information{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.aboutme .information p{
+    font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* start posts */
+.posts {
+    text-align: center;
+    padding:40px 0;
+}
+.posts h2{
+    margin-bottom: 30px;
+}
+
+.posts .row {
+    gap: 40px;
+   
+}
+.post:after{
+    content:'';
+    border-top: 30px solid #a3a3a3;
+    border-left: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: calc((100% - 40px) / 2);
+    align-items: flex-start;
+    box-shadow: 0px 14.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+}
+.post .user-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+.post .user-info .user-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+}
+.post .user-info .user-data span{
+  color: #969696; 
+}
+.post .user-info img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+flex-wrap: wrap;
+}
+.post .user-info .user-data span{
+font-size: 12px;
+color: 969696;
+}
+.post .rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+.posts q{
+    color: #646464;
+    font-size:15px;
+    font-family: var(--mainFont);
+}
+
+/*Achievements*/
+.Achievements{
+    text-align:center;
+    padding: 10px 0;
+    font-family: "Poetsen One", sans-serif;
+}
+.Achievements h1{
+  font-size: 40px;
+}
+.gridContainer{
+    width: 500px;
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 400px 400px;
+    padding: 40px 20px;
+   
+}
+.gridContainer .item1, .item2, .item3, .item4 ,.item5 ,.item6{
+    
+    text-align: center;
+}
+.gridContainer  .item2 img,.item4 img,.item6 img{
+    
+   width: 400px;
+   height: 250px;
+}
+.gridContainer p{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+}
+
+
+/*start footer*/
+.footer {
+    background-color: #393e46;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.footer a {
+    color: #fff;
+
+}
+
+.footer .row {
+    gap: 35px;
+}
+
+
+
+
+.footer .footer-start {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer .footer-start .logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.footer .footer-start .logo a {
+    font-size: 14px;
+}
+
+.footer .footer-start p {
+    color: #F4F4F4;
+    font-size: 14px;
+    font-weight: 200;
+
+}
+
+.footer  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+    flex-wrap: wrap;
+}
+.footer .footer-start img{
+    width: 40px;
+    height: 40px;
+}
+
+.footer .icons img {
+
+    border: 1px solid #fff;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+
+
+/*end footer*/
